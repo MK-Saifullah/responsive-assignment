@@ -54,6 +54,10 @@ body p{
     margin: 0 auto;
     border-radius: 15px;
     height: 450px;
+    transition: all linear .5s;
+}
+#banner:hover{
+    background: gray;
 }
 #banner img{
     width: 425px;
@@ -62,13 +66,17 @@ body p{
     padding-left: 40px;
 }
 .left-content h1{
-    /* font-weight: 800; */
     color: #ffff;
     font-size: 50px;
 }
 .left-content p{
-    /* font-weight: 700; */
     color: #ffff;
+}
+.right-content{
+    transition: width 1s, height 1s, transform 3s;
+}
+.right-content:hover{
+    transform: rotate(360deg);
 }
 
 /* Banner ends here */
@@ -85,7 +93,6 @@ body p{
     width: 200px;
     height: 200px;
     background: #161616;
-    /* padding: 50px; */
     border-radius: 15px;
     padding-left: 25px;
     padding-top: 25px;
@@ -98,7 +105,6 @@ body p{
 .single-blog {
     height:320px;
     border: 1px solid gray;
-    /* padding:5px; */
     margin: 0 10px 10px 10px;
     border-radius:10px;
 }
@@ -118,9 +124,7 @@ body p{
     padding-left: 20px;
     padding-right: 20px;
 }
-/* .country-blog .versus {
-    text-align: center;
-} */
+
 
 .country-blog{
     height:180px;
@@ -189,28 +193,90 @@ ul li a span{
 
 
 
-
-
-
-
-
-
-
-
-
-/* Footer CSS starts here */
-
-/* .social_media ul li:hover{
-    background: #000;
-} */
-
-
-
-
-/* Footer CSS ends here */
-@media (max-width: 668px){
-    #counter .row{
-        display: flex;
-        flex-direction: column-reverse;
+/* For Mobile device */
+@media only screen and (max-width: 688px){
+    #blog-container{
+        flex-direction: column;
+        justify-content: center;
     }
+    .blog-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .detail-section{
+        display: flex;
+        background: transparent;
+        flex-direction: column;
+    }
+    .head-container{
+        
+        flex-direction: column;
+        /* justify-content: center;
+        width: 100%;
+        height: 100% */
+    }
+    .left-content h1, p{
+        font-size: 16px;
+        /* text-align: center; */
+    }
+    #banner img{
+        width: 250px;
+    }
+    .blog-section{
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .country-blog .flag {
+        width: 15%;
+        height:15%;
+        /* padding-left: 20px;
+        padding-right: 20px; */
+    }
+    .country-blog{
+        height:150px;
+        width: 200px;
+    }
+}
+
+/* For Tablet Device */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    #blog-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .blog-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .detail-section{
+        display: flex;
+        background: transparent;
+    }
+    .head-container{
+        flex-direction: row;
+    }
+    .left-content h1{
+        font-size: 16px;
+    }
+    .left-content p{
+        font-size: 10px;
+    }
+    #banner img{
+        width: 230px;
+    }
+    #banner{
+        background: #161616;
+        width: 600px;
+        margin: 0 auto;
+        border-radius: 15px;
+        height: 250px;
+    }
+    .country-blog .flag {
+        width: 25%;
+        height:25%;
+    }
+    .country-blog, .single-blog{
+        height:250px;
+        width: 300px;
+    }
+    
 }
