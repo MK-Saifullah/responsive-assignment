@@ -1,0 +1,216 @@
+body h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+    color: #2A1E59;
+}
+body p{
+    font-family: 'Roboto', sans-serif;
+}
+/* Common CSS starts here*/
+.head-container {
+    /* width: 400px;
+    height: 500px; */
+    display: flex;
+    margin: 0 auto;
+}
+.btn-color{
+    background-color: #DD0000;
+    padding: 10px 35px;
+    border-radius: 6px;
+    color: #fff;
+    /* font-weight: 700; */
+    width: 185px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.btn-color span {
+    padding-left: 10px;
+}
+.btn-general{
+    padding: 10px 25px;
+    border-radius: 6px;
+    color: black;
+    background: gray;
+    /* font-weight: 700; */
+    width: 185px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.view-btn{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* .price_color{
+    color: #76C27E;
+} */
+/* Common CSS ends here */
+
+/* Banner starts here */
+#banner{
+    background: #161616;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 15px;
+    height: 450px;
+}
+#banner img{
+    width: 425px;
+}
+.left-content {
+    padding-left: 40px;
+}
+.left-content h1{
+    /* font-weight: 800; */
+    color: #ffff;
+    font-size: 50px;
+}
+.left-content p{
+    /* font-weight: 700; */
+    color: #ffff;
+}
+
+/* Banner ends here */
+
+/* Blog starts here */
+#blog-container{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+}
+.detail-section{
+    width: 200px;
+    height: 200px;
+    background: #161616;
+    /* padding: 50px; */
+    border-radius: 15px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.blog-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+}
+.single-blog {
+    height:320px;
+    border: 1px solid gray;
+    /* padding:5px; */
+    margin: 0 10px 10px 10px;
+    border-radius:10px;
+}
+.single-blog p span{
+    padding-right: 25px;
+}
+.single-blog img {
+    width: 250px;
+    height: 150px;
+}
+.blog-inside{
+    padding-left: 15px;
+}
+.country-blog .flag {
+    width: 25%;
+    height:25%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* .country-blog .versus {
+    text-align: center;
+} */
+
+.country-blog{
+    height:180px;
+    border: 1px solid gray;
+    /* padding:5px; */
+    margin: 0 10px 10px 10px;
+    border-radius:10px;
+    text-align: center;
+}
+/* Blog ends here */
+
+/* Goal section starts here */
+#goal-section{
+    width: 100%;
+    height: 200px;
+    background: #161616;
+    text-align: center;
+    padding: 40px 0;
+}
+#goal-section h1, a {
+    color: white;
+    text-decoration: none;
+    padding-right: 15px;
+}
+hr{
+    width: 80%;
+    
+}
+/* Goal section ends here */
+
+/* Footer starts here */
+.footer{
+    text-align: center;
+}
+
+.social-network{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+ul li a {
+    border-radius: 20px;
+    outline: none;
+    text-align: center;
+    border: 1px solid white;
+    background: transparent;
+    color: #2A1E59;
+    transition: all linear .5s;
+}
+ ul li a:hover{
+    background: #76C27E;
+}
+
+ul li a span{
+    font-size: 15px;
+    transition: all linear .5s;
+}
+ ul li a:hover span{
+    color: #FFFFF4;
+}
+/* Footer ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer CSS starts here */
+
+/* .social_media ul li:hover{
+    background: #000;
+} */
+
+
+
+
+/* Footer CSS ends here */
+@media (max-width: 668px){
+    #counter .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
